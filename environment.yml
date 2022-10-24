@@ -1,0 +1,31 @@
+name: Liens_interet
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - black >= 22.6.0
+  - pyright >= 1.1.276
+  - python >= 3.10.6
+
+
+  - pip
+  - unidecode
+  - pypdf2
+  - attrs
+  - bs4
+  - lxml
+  - pandas
+  - pydantic
+  - xlsxwriter
+  - typing
+  - openpyxl
+  - python-docx
+
+  - pip:
+    - mammoth
+ 
+
+
+
