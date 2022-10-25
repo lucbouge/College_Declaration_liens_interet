@@ -32,9 +32,7 @@ def main():
         cout.write(text)
     ##
     soup = BeautifulSoup(text, features="lxml")
-    body = soup.body
-    assert body is not None
-    items = make_items(body=body)
+    items = make_items(soup=soup)
     # pp.pprint(items)
     ##
     df = pd.DataFrame.from_records(items, columns=Item._fields)

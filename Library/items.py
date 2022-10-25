@@ -13,7 +13,9 @@ class Item(NamedTuple):
     answer: str
 
 
-def make_items(body):
+def make_items(*, soup):
+    assert soup is not None
+    body = soup.body
     assert body is not None
     items = list()
     ##

@@ -2,14 +2,34 @@ import os
 import datetime
 from unidecode import unidecode
 from docx import Document
+import docx
 
 # from docx.enum.style import WD_STYLE
 from Library import survey
 from Library import answers
 
+## https://stackoverflow.com/a/63343007/7266382
+
+
+def set_language(*, lang, document):
+    pass
+    # styles_element = document.styles.element
+    # print(styles_element.xpath(".//text()"))
+    # quit()
+    # rpr_default = styles_element.xpath("./w:docDefaults/w:rPrDefault")[0]
+    # print(rpr_default.xpath("//text()"))
+    # lang_default = rpr_default.xpath("./w:rPr/w:lang")
+    # print(lang_default)
+    # lang_default.set(docx.oxml.shared.qn("w:val"), "fr-FR")
+    # print(lang_default)
+
 
 def make_documents(*, key_to_answer_dict, persons):
     document = Document()
+    core_properties = document.core_properties
+    core_properties.language = "fr-FR"
+    ##
+    set_language(lang="fr-FR", document=document)
     ##
     for (person_nb, (firstname, lastname)) in enumerate(persons, start=1):
         document = Document()
@@ -85,7 +105,7 @@ def make_document_questions(
         p.add_run(f"{question}:").bold = True
         p.add_run(f" {answer}")
     table = document.add_table(rows=1, cols=2)
-    table.style = "Table Grid"
+    table.style = "Normal Table"
     hdr_cells = table.rows[0].cells
     hdr_cells[
         0
