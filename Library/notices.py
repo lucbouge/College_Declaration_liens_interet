@@ -69,7 +69,7 @@ Voici une liste minimale, à compléter selon votre situation particulière.
     - Des personnes de la famille qui vous paraissent impliquées, par exemple la famille de votre conjoint, etc.
 """
 
-notice_enseignement = """
+notice_engagement = """
 """
 
 notice_activites_sociales = """

@@ -11,13 +11,13 @@ from unidecode import unidecode
 ## https://github.com/mwilliamson/python-mammoth#readme
 import mammoth
 
-from Library.survey import persons, table
+from Library.survey import persons
 from Library.documents import make_documents
 from Library.items import make_items, Item
 from Library.utilities import check_df
 from Library.answers import make_key_to_answer_dict, extend_key_to_answer_dict
 
-original_docx_filename = "2021-11-23_results.docx"
+original_docx_filename = "Sources/2021-11-23_results.docx"
 # original_docx_filename = "test.docx"
 
 

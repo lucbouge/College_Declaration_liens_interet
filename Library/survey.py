@@ -1,6 +1,6 @@
 from Library import notices
 
-table = {
+structure = {
     "Données générales": {
         "nb_answers": 1,
         "description": notices.notice_donnees_generales,
@@ -64,7 +64,7 @@ table = {
     },
     "Engagement": {
         "nb_answers": 4,
-        "description": notices.notice_enseignement,
+        "description": notices.notice_engagement,
         "questions": (
             "Cadre de l'activité",
             "Statut dans ce cadre",

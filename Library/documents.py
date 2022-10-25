@@ -2,7 +2,8 @@ import os
 import datetime
 from unidecode import unidecode
 from docx import Document
-from docx.enum.style import WD_STYLE
+
+# from docx.enum.style import WD_STYLE
 from Library import survey
 from Library import answers
 
@@ -39,7 +40,7 @@ def make_document_person(
     *, key_to_answer_dict, firstname, lastname, person_nb, document
 ):
     document.add_heading(f"Personne {person_nb}: {lastname}, {firstname}", 1)
-    for (block_nb, (block, item)) in enumerate(survey.table.items(), start=1):
+    for (block_nb, (block, item)) in enumerate(survey.structure.items(), start=1):
         # print("Bloc", block)
         document.add_heading(f"Bloc {block_nb}: {block}", 2)
         ##
