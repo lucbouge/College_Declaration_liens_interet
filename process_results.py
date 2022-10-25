@@ -47,7 +47,7 @@ survey_table = {
         "Nature de l'activité",
         "Organisme",
         "Domaine et type de travaux",
-        "Rémunération: montant et beneficiaire",
+        "Rémunération: montant et bénéficiaire",
         "Début",
         "Fin",
     ),
@@ -85,7 +85,7 @@ survey_table = {
 }
 
 persons = (
-    ("Eric", "Arquis"),
+    ("Éric", "Arquis"),
     ("Luc", "Bougé"),
     ("Anne", "Guillaume"),
     ("Louise", "Nyssen"),
