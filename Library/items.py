@@ -60,7 +60,8 @@ def make_items(body):
         else:
             assert isinstance(e, Tag)
             assert e.name == "p"
-            print(f"unexpected element: {e}")
+            assert is_pure(e)
+            print(f"Ignored element: {e}")
     return items
 
 

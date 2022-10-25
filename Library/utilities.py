@@ -1,5 +1,5 @@
 import re
-from Library.survey import structure
+from Library import survey
 
 
 def split_names(h1):
@@ -20,7 +20,7 @@ def normalize(s):
 
 def check_df(df):
     for (group, grouped_df) in df.groupby(by=["firstname", "lastname"]):
-        for (block, item) in structure.items():
+        for (block, item) in survey.structure.items():
             # description = item["description"]
             questions = set(item["questions"])
             tags = set(grouped_df[grouped_df["h2"] == block]["question"])

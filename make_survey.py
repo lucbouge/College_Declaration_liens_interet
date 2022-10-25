@@ -7,7 +7,6 @@ from docx import Document
 import datetime
 from unidecode import unidecode
 
-
 ## https://github.com/mwilliamson/python-mammoth#readme
 import mammoth
 
