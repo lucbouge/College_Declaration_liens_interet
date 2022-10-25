@@ -2,7 +2,8 @@ from Library import notices
 
 table = {
     "Données générales": {
-        "description": "Votre activité principale exercée actuellement et vos autres activités principales éventuelles au cours des 5 dernières années",
+        "nb_answers": 1,
+        "description": notices.notice_donnees_generales,
         "questions": (
             "Votre prénom",
             "Votre nom de famille",
@@ -14,6 +15,7 @@ table = {
         ),
     },
     "Activité principale": {
+        "nb_answers": 4,
         "description": notices.notice_activite_principale,
         "questions": (
             "Nature de l'activité",
@@ -24,7 +26,8 @@ table = {
         ),
     },
     "Activité secondaire": {
-        "description": notices.notice_actvites_secondaires,
+        "nb_answers": 6,
+        "description": notices.notice_activites_secondaires,
         "questions": (
             "Nature de l'activité",
             "Organisme",
@@ -35,6 +38,7 @@ table = {
         ),
     },
     "Activité financée": {
+        "nb_answers": 4,
         "description": notices.notice_activite_financee,
         "questions": (
             "Nature de l'activité",
@@ -47,6 +51,7 @@ table = {
         ),
     },
     "Participation": {
+        "nb_answers": 4,
         "description": notices.notice_participation,
         "questions": (
             "Structure concernée",
@@ -58,6 +63,7 @@ table = {
         ),
     },
     "Engagement": {
+        "nb_answers": 4,
         "description": notices.notice_enseignement,
         "questions": (
             "Cadre de l'activité",
@@ -68,6 +74,7 @@ table = {
         ),
     },
     "Autres liens": {
+        "nb_answers": 4,
         "description": notices.notice_autres,
         "questions": (
             "Elément ou fait concerné",

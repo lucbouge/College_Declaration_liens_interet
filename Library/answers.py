@@ -25,4 +25,4 @@ def make_key_to_answer_dict(items):
 
 def get_answer(*, firstname, lastname, h2, h3, question, key_to_answer_dict):
     key = (firstname, lastname, h2, h3, question)
-    return key_to_answer_dict.get(key, " ")
+    return key_to_answer_dict.get(key, "")
