@@ -9,7 +9,7 @@ import lxml
 from Library import survey
 from Library import answers
 
-## https://stackoverflow.com/a/63343007/7266382
+## Copied from https://stackoverflow.com/a/63343007/7266382
 
 
 def print_etree(n, x):

@@ -52,6 +52,9 @@ def make_items(*, soup):
             assert h2 is not None
             if h2 != "Données générales":
                 assert h3 is not None, e
+            else:
+                assert h3 is None
+                h3 = "Réponse 1"
             ul = e
             for li in ul.children:
                 assert isinstance(li, Tag)
