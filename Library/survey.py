@@ -58,7 +58,7 @@ structure = {
             "Type d'investissement",
             "Part dans le capital",
             "Montant détenu",
-            "Debut",
+            "Début",
             "Fin",
         ),
     },
