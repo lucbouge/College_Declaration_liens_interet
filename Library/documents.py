@@ -124,5 +124,5 @@ def add_validation_table(*, prefix_tag, document):
     hdr_cells[1].text = ""
     table.allow_autofit = True
     table.alignment = docx.enum.text.WD_ALIGN_PARAGRAPH.RIGHT
-    table.columns[0].width = docx.shared.Cm(8)
+    # table.columns[0].width = docx.shared.Cm(8)
     table.columns[1].width = docx.shared.Cm(1)
