@@ -5,9 +5,9 @@ Faisons d'abord connaissance!
 
 notice_activite_principale = """
 Votre activité principale exercée actuellement et vos autres activités principales éventuelles au cours des 5 dernières années:
-    - Activité salariée
-    - Activité libérale
-    - Autre activité: administrateur, retraité, etc.
+    ⇒ Activité salariée
+    ⇒ Activité libérale
+    ⇒ Autre activité: administrateur, retraité, etc.
 
 Vous avez plusieurs fiches à votre disposition, mais n'utilisez que ce qui vous est nécessaire.
 """
@@ -45,10 +45,10 @@ notice_activite_financee = """
 Activités que vous dirigez ou avez dirigées et qui ont bénéficié d’un financement par un organisme à but lucratif dont l’objet social entre dans le champ de compétence du Collège. Vous avez plusieurs fiches à votre disposition, mais utilisez seulement ce qui vous convient.
 
 Il n'est pas nécessaire de fournir des données numériques très précises sur le pourcentage du montant du financement par rapport au budget de fonctionnement de votre structure. Voici par exemple une échelle possible, mais vous pouvez en choisir une autre. Il suffit de le préciser dans votre réponse.
-    - Très significatif: > 75%
-    - Significatif: 25%-75%
-    - Peu significatif: 5%-25%
-    - Négligeable: < 5%
+    ⇒ Très significatif: > 75%
+    ⇒ Significatif: 25%-75%
+    ⇒ Peu significatif: 5%-25%
+    ⇒ Négligeable: < 5%
 """
 
 notice_participation = """
@@ -62,11 +62,11 @@ notice_famille = """
 Il s'agit ici des personnes proches dont la relation peut induire un lien d'intérêt avec votre action au sein du Collège. Il peut s'agit de parents ou d'enfants salariés et/ou possédant des intérêts financiers dans une structure dont l’objet social entre dans le champ de compétence du Collège. Mais il peut aussi s'agit d'amis particulièrement proches.
 
 Voici une liste minimale, à compléter selon votre situation particulière.
-    - Votre conjoint
-    - Vos parents
-    - Vos enfants
-    - Vos frères et sœurs
-    - Des personnes de la famille qui vous paraissent impliquées, par exemple la famille de votre conjoint, etc.
+    ⇒ Votre conjoint
+    ⇒ Vos parents
+    ⇒ Vos enfants
+    ⇒ Vos frères et sœurs
+    ⇒ Des personnes de la famille qui vous paraissent impliquées, par exemple la famille de votre conjoint, etc.
 """
 
 notice_engagement = """

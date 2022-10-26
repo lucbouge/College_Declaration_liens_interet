@@ -1,3 +1,5 @@
+# conda env update --file ~/Liens_interet/environment.yml --prune
+
 name: Liens_interet
 
 channels:

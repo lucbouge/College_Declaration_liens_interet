@@ -72,17 +72,19 @@ def make_document_person(
         for series_nb in range(1, nb_answers + 1):
             series = f"Réponse {series_nb}"
             document.add_heading(f"{series}", 3)
+            prefix = (person_nb, block_nb, series_nb)
             make_document_questions(
                 firstname=firstname,
                 lastname=lastname,
                 h2=block,
                 h3=series,
-                prefix=(person_nb, block_nb, series_nb),
+                prefix=prefix,
                 questions=questions,
                 key_to_answer_dict=key_to_answer_dict,
                 document=document,
             )
-            add_validation_table(document)
+            prefix_tag = make_prefix_tag(prefix=prefix, suffix="9")
+            add_validation_table(prefix_tag=prefix_tag, document=document)
 
 
 def make_document_questions(
@@ -98,22 +100,27 @@ def make_document_questions(
             key_to_answer_dict=key_to_answer_dict,
         )
         p = document.add_paragraph(style="List Bullet")
-        full_prefix = prefix + (question_nb,)
-        prefix_string = ".".join((str(s) for s in full_prefix))
-        p.add_run(f"[{prefix_string}] ")
+        ## Number 9 is reserved for the validation question
+        assert question_nb < 9
+        prefix_tag = make_prefix_tag(prefix=prefix, suffix=question_nb)
+        p.add_run(f"{prefix_tag} ")
         p.add_run(f"{question}:").bold = True
         p.add_run(f" {answer}")
 
 
-def add_validation_table(document):
+def make_prefix_tag(*, prefix, suffix):
+    full_prefix = prefix + (suffix,)
+    prefix_string = ".".join((str(s) for s in full_prefix))
+    return f"[{prefix_string}]"
+
+
+def add_validation_table(*, prefix_tag, document):
     table = document.add_table(rows=1, cols=2)
     table.style = "Table Grid"
     hdr_cells = table.rows[0].cells
     hdr_cells[
         0
-    ].text = (
-        f"Si le bloc est non vide, j'écris 'OK'\ndans la case de droite pour le valider"
-    )
+    ].text = f"{prefix_tag} Si le bloc est non vide, j'écris 'OK'\ndans la case de droite pour le valider"
     hdr_cells[1].text = ""
     table.allow_autofit = True
     table.alignment = docx.enum.text.WD_ALIGN_PARAGRAPH.RIGHT
