@@ -14,12 +14,9 @@ dependencies:
 
   - pip
   - unidecode
-  - pypdf2
-  - attrs
   - bs4
   - lxml
   - pandas
-  - pydantic
   - xlsxwriter
   - typing
   - openpyxl
