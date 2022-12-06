@@ -27,8 +27,8 @@ from typing import (
 )
 import time
 import pathlib
-from bs4 import BeautifulSoup
-from docx import Document
+from bs4 import BeautifulSoup, Tag, NavigableString
+import docx
 
 
 from functools import wraps
@@ -42,5 +42,3 @@ from Libraries.Utilities.file import (
     test_file_exists,
 )
 from Libraries.Utilities.utilities import *
-
-
