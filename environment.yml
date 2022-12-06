@@ -8,8 +8,8 @@ channels:
 
 dependencies:
   - black >= 22.6.0
-  - pyright >= 1.1.276
-  - python >= 3.10.6
+  # - pyright >= 1.1.280
+  - python >= 3.10.8
 
 
   - pip
