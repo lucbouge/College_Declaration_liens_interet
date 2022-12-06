@@ -6,8 +6,8 @@ import docx
 import lxml
 
 # from docx.enum.style import WD_STYLE
-from Library import survey
-from Library import answers
+from Libraries.Helpers import survey
+from Libraries.Helpers import answers
 
 ## Copied from https://stackoverflow.com/a/63343007/7266382
 

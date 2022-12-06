@@ -21,6 +21,8 @@ dependencies:
   - typing
   - openpyxl
   - python-docx
+  - attrs
+  - more-itertools
 
   - pip:
     - mammoth

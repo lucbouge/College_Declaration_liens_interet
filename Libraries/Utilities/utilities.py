@@ -1,5 +1,5 @@
 import re
-from Library import survey
+from Libraries.Helpers import survey
 
 
 def split_names(h1):

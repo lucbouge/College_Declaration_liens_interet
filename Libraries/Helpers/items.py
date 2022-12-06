@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup, Tag, PageElement, NavigableString
 from typing import NamedTuple, Optional
-from Library import utilities
+from Libraries.Utilities import utilities
 
 
 class Item(NamedTuple):

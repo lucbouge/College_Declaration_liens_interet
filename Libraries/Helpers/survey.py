@@ -1,4 +1,4 @@
-from Library import notices
+from Libraries.Helpers import notices
 
 structure = {
     "Données générales": {

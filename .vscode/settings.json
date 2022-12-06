@@ -1,1 +1,6 @@
-{}
+{
+    "files.exclude": {
+        "Declarations/": true,
+        "Sources/": true
+    }
+}

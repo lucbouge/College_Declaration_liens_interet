@@ -1,20 +1,13 @@
-import os
-import re
-from bs4 import BeautifulSoup
-import pprint as pp
-import pandas as pd
-from docx import Document
-import datetime
-from unidecode import unidecode
+from Libraries.Config.packages import *
 
 ## https://github.com/mwilliamson/python-mammoth#readme
 import mammoth
 
-from Library.survey import persons
-from Library.documents import make_documents
-from Library.items import make_items, Item
-from Library.utilities import check_df
-from Library.answers import make_key_to_answer_dict, extend_key_to_answer_dict
+from Libraries.Helpers.survey import persons
+from Libraries.Helpers.documents import make_documents
+from Libraries.Helpers.items import make_items, Item
+from Libraries.Utilities.utilities import check_df
+from Libraries.Helpers.answers import make_key_to_answer_dict, extend_key_to_answer_dict
 
 original_docx_filename = "Sources/2021-11-23_results.docx"
 # original_docx_filename = "test.docx"
